@@ -3,6 +3,7 @@ import Foundation
 let exams: [ABC.Type] = [
     Practice.self,
     ABC081.self,
+    ABC083.self,
     ABC086.self,
     ABC087.self
 ]
