@@ -5,8 +5,7 @@ func readInt() -> Int {
 }
 
 func readIntArray() -> [Int] {
-    readLine()!.split(separator: " ")
-        .map { Int($0)! }
+    readLine()!.split(separator: " ").map { Int($0)! }
 }
 
 func waitToReadInt() -> Int {
