@@ -1,4 +1,8 @@
 enum ABC081: ABC {
+    static func a() {
+        print(readLine()!.filter { $0 == "1" }.count)
+    }
+
     static func b() {
         let n = readInt()
         precondition(1 <= n && n <= 200)
