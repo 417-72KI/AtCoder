@@ -4,6 +4,7 @@ let exams: [ABC.Type] = [
     Practice.self,
     ABC081.self,
     ABC083.self,
+    ABC085.self,
     ABC086.self,
     ABC087.self,
     ABC088.self,
