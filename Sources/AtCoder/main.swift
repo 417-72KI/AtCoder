@@ -3,6 +3,7 @@ import Foundation
 let exams: [ABC.Type] = [
     Practice.self,
     ABC081.self,
+    ABC086.self,
     ABC087.self
 ]
 
@@ -18,23 +19,23 @@ while !(0..<exams.count).contains(num) {
 let exam = exams[num]
 
 print(exam.name)
-while true {
+loop: while true {
     print("Input: a, b, c")
     switch readLine() {
     case "a"?:
         print("\(exam.name)A")
         exam.a()
+        break loop
     case "b"?:
         print("\(exam.name)B")
         exam.b()
+        break loop
     case "c"?:
         print("\(exam.name)C")
         exam.c()
+        break loop
     default:
         fputs("unexpected input.\n", stderr)
         continue
     }
-
 }
-
-
